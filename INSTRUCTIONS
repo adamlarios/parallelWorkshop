@@ -1,0 +1,24 @@
+First, load the module:
+module load mpi/mpich-x86_64
+
+FORTRAN 77
+----------
+mpif90 mpi_hello.f90
+mpirun -np 2 ./a.out
+
+FORTRAN 90
+----------
+mpif77 mpi_hello.f
+mpirun -np 2 ./a.out
+
+C
+---
+mpicc mpi_hello.c
+mpirun -np 2 ./a.out
+
+C++
+---
+mpiCC mpi_hello.cpp
+mpirun -np 2 ./a.out
+
+
